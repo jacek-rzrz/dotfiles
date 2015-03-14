@@ -32,3 +32,5 @@ alias bye='exit'
 alias ls='ls --color=auto'
 alias l='ls -lh'
 alias www='google-chrome >/dev/null 2>&1 & bye'
+
+function cdl() { cd $1 && clear && ls -lh ; }
