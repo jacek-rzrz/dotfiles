@@ -28,6 +28,8 @@ export PS1='`if [ $? = 0 ]; then echo "\[\033[02;32m\]+"; else echo "\[\033[02;3
 
 export PATH=$PATH:.:~/go/go_appengine:/usr/local/go/bin
 
+export JAVA_HOME=/opt/jdk
+
 alias bye='exit'
 alias ls='ls --color=auto'
 alias l='ls -lh'
