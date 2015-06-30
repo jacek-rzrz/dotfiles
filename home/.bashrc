@@ -26,9 +26,10 @@ shopt -s globstar
 
 export PS1='`if [ $? = 0 ]; then echo "\[\033[02;32m\]+"; else echo "\[\033[02;31m\]x"; fi`\[\033[02;39m\]\u@\[\033[01;30m\]\h\[\033[01;34m\] \w\[\033[35m\] \[\033[01;30m\]>\[\033[00m\] '
 
-export PATH=$PATH:.:~/go/go_appengine:/usr/local/go/bin
-
 export JAVA_HOME=/opt/jdk
+
+export PATH=$PATH:.:~/go/go_appengine:/usr/local/go/bin:$JAVA_HOME/bin
+
 
 alias bye='exit'
 alias ls='ls --color=auto'
