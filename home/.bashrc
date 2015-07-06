@@ -28,8 +28,7 @@ export PS1='`if [ $? = 0 ]; then echo "\[\033[02;32m\]+"; else echo "\[\033[02;3
 
 export JAVA_HOME=/opt/jdk
 
-export PATH=$PATH:.:~/go/go_appengine:/usr/local/go/bin:$JAVA_HOME/bin
-
+export PATH=$PATH:.:~/go/go_appengine:/usr/local/go/bin:$JAVA_HOME/bin:~/install/google-cloud-sdk/bin
 
 alias bye='exit'
 alias ls='ls --color=auto'
@@ -37,3 +36,7 @@ alias l='ls -lh'
 alias www='google-chrome >/dev/null 2>&1 & bye'
 
 function cdl() { cd $1 && clear && ls -lh ; }
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
